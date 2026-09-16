@@ -54,7 +54,7 @@
   .rights li span.n{display:inline;font-family:"Newsreader",Georgia,serif;
     font-weight:300;font-size:inherit;color:inherit;
     vertical-align:baseline;margin-right:.4em;letter-spacing:inherit}
-  .hero-note{margin:40px 0 0;max-width:60ch;color:var(--ink-soft);font-size:18px;line-height:1.55}
+  .hero-note{margin:40px 0 0;max-width:none;color:var(--ink-soft);font-size:18px;line-height:1.55}
 
   @media (prefers-reduced-motion:no-preference){
     .reveal{opacity:0;transform:translateY(10px);animation:rise .7s cubic-bezier(.2,.7,.3,1) forwards}
@@ -65,11 +65,12 @@
   }
 
   section{padding:78px 0}
+  section.wrap{padding-top:78px;padding-bottom:78px}
   h2{font-family:"Newsreader",Georgia,serif;font-weight:400;
     font-size:clamp(26px,3.4vw,36px);line-height:1.15;letter-spacing:-.01em;margin:0 0 22px}
   h3{font-size:16px;font-weight:700;margin:0 0 8px;letter-spacing:.01em}
-  p{max-width:var(--measure)}
-  .lead{font-size:19px;line-height:1.55;max-width:60ch}
+  p{max-width:none}
+  .lead{font-size:19px;line-height:1.55;max-width:none}
 
   /* handoff band */
   .handoff{background:var(--ink);color:var(--paper)}
@@ -91,31 +92,31 @@
   .div-col h3{font-family:"Newsreader",Georgia,serif;font-size:28px;font-weight:400;margin:0 0 4px}
   .price{font-size:13px;font-weight:700;color:var(--gold);margin:0 0 18px}
   .div-col ul{margin:0;padding-left:1.05em;color:var(--ink-soft)}
-  .div-col li{margin-bottom:9px;max-width:38ch}
+  .div-col li{margin-bottom:9px;max-width:none}
 
   .ledger{background:var(--paper-alt);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-  .caption{font-size:14px;color:var(--ink-soft);margin-top:16px;max-width:60ch}
+  .caption{font-size:14px;color:var(--ink-soft);margin-top:16px;max-width:none}
 
   /* proof band */
   .proof{background:var(--ink);color:var(--paper);border-top:1px solid var(--rule)}
-  .proof h2{color:var(--paper);max-width:24ch;font-size:clamp(22px,2.9vw,31px);
+  .proof h2{color:var(--paper);max-width:none;font-size:clamp(22px,2.9vw,31px);
     letter-spacing:.005em;line-height:1.2;margin-bottom:26px}
   .proof p{color:#C3CCD8;margin:0 0 18px}
   .proof .lead{color:#DCE3EC}
-  .proof .caption{color:#8E9AAC;border-top:1px solid #23334B;padding-top:20px;margin-top:28px;max-width:62ch}
+  .proof .caption{color:#8E9AAC;border-top:1px solid #23334B;padding-top:20px;margin-top:28px;max-width:none}
 
-  .history{display:grid;grid-template-columns:auto 1fr;gap:0 26px;margin-top:28px;max-width:740px}
+  .history{display:grid;grid-template-columns:auto 1fr;gap:0 26px;margin-top:28px;max-width:none}
   .history dt{font-weight:700;font-size:15px;font-variant-numeric:tabular-nums;
     padding:14px 0;border-top:1px solid var(--rule)}
   .history dd{margin:0;padding:14px 0;border-top:1px solid var(--rule);color:var(--ink-soft);font-size:15px}
 
-  .who{margin:26px 0 0;padding:0;list-style:none;max-width:700px}
+  .who{margin:26px 0 0;padding:0;list-style:none;max-width:none}
   .who li{padding:18px 0;border-top:1px solid var(--rule);color:var(--ink-soft);font-size:16.5px}
   .who li:last-of-type{border-bottom:1px solid var(--rule)}
   .movie{font-family:"Newsreader",Georgia,serif;font-size:clamp(21px,2.6vw,28px);
     font-weight:400;color:var(--ink);margin:34px 0 0;max-width:none}
 
-  .steps{margin-top:30px;max-width:700px;counter-reset:s;padding:0}
+  .steps{margin-top:30px;max-width:none;counter-reset:s;padding:0}
   .steps li{list-style:none;counter-increment:s;position:relative;
     padding:18px 0 18px 46px;border-top:1px solid var(--rule)}
   .steps li::before{content:counter(s);position:absolute;left:0;top:18px;
@@ -124,11 +125,11 @@
   .steps b{display:block;font-size:16px;margin-bottom:3px}
   .steps span{color:var(--ink-soft);font-size:15.5px}
 
-  .states p{margin:0 0 22px;max-width:68ch;color:var(--ink-soft)}
+  .states p{margin:0 0 22px;max-width:none;color:var(--ink-soft)}
   .states b{color:var(--ink)}
 
   footer{padding:48px 0 72px;font-size:13.5px;color:var(--ink-soft);border-top:1px solid var(--rule)}
-  footer p{max-width:72ch;margin:0 0 12px}
+  footer p{max-width:none;margin:0 0 12px}
   footer .lic{color:var(--ink)}
 
   @media (max-width:720px){
