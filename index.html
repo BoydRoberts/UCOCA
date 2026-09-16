@@ -89,7 +89,8 @@
   .divs{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:34px;border-top:1px solid var(--ink)}
   .div-col{padding:28px 34px 30px 0}
   .div-col+.div-col{border-left:1px solid var(--rule);padding-left:34px;padding-right:0}
-  .div-col h3{font-family:"Newsreader",Georgia,serif;font-size:28px;font-weight:400;margin:0 0 4px}
+  .div-col h3{font-family:"Newsreader",Georgia,serif;font-size:clamp(19px,2.1vw,25px);
+    font-weight:400;line-height:1.2;margin:0 0 20px;white-space:nowrap}
   .price{font-size:13px;font-weight:700;color:var(--gold);margin:0 0 18px}
   .div-col ul{margin:0;padding-left:1.05em;color:var(--ink-soft)}
   .div-col li{margin-bottom:9px;max-width:none}
@@ -140,6 +141,7 @@
     .divs{grid-template-columns:1fr}
     .div-col{padding:26px 0}
     .div-col+.div-col{border-left:0;border-top:1px solid var(--rule);padding-left:0}
+    .div-col h3{white-space:normal}
     .hero{padding:52px 0 48px}
     section{padding:56px 0}
   }
@@ -162,6 +164,7 @@
     <li class="reveal"><span class="n">2.</span>The people have the right to access &mdash; and <span class="em">earn full credit</span> &mdash; all publicly owned postsecondary courses and programs online at cost.</li>
   </ol>
   <p class="hero-note">Every UC, CSU, and CCC course available online. Free or full credit. Open to all. Fully accredited. Low cost. Drafted. Filed with the California Attorney General twice. Now passing the torch.</p>
+  <a class="btn" href="/measure.pdf">Read the full amendment</a>
 </div>
 
 <section class="handoff">
@@ -170,8 +173,6 @@
     <p class="lead">I am Boyd Roberts. I wrote this constitutional amendment and filed it with the California Attorney General in 2017 and again in 2023. There was no money. It never got circulated. The people have never had a chance to vote for the University of California Online.</p>
     <p class="lead">Rather than let it sit in a drawer, I've released the text under a Creative Commons Attribution 4.0 license.</p>
     <p class="lead">You may copy it, change it, file it under your own name, and run with it. You owe me nothing but credit for the original idea.</p>
-
-    <a class="btn" href="/measure.pdf">Read the full amendment</a>
   </div>
 </section>
 
@@ -180,8 +181,7 @@
 
   <div class="divs">
     <div class="div-col">
-      <h3>Division I</h3>
-      <p class="price">The &lsquo;Free&rsquo; Division</p>
+      <h3>Division I &nbsp;|&nbsp; The &lsquo;Free&rsquo; Division</h3>
       <ul>
         <li>All of the classes</li>
         <li>Audit any course at no cost</li>
@@ -191,8 +191,7 @@
       </ul>
     </div>
     <div class="div-col">
-      <h3>Division II</h3>
-      <p class="price">The &lsquo;For Credit&rsquo; Division</p>
+      <h3>Division II &nbsp;|&nbsp; The &lsquo;For Credit&rsquo; Division</h3>
       <ul>
         <li>All of the classes</li>
         <li>Fully accredited courses and degrees</li>
