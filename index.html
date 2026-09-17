@@ -48,8 +48,10 @@
     color:var(--ink-soft);margin:0 0 26px}
   .rights{margin:0;padding:0;list-style:none;max-width:none}
   .rights li{font-family:"Newsreader",Georgia,serif;font-weight:300;
-    font-size:clamp(20px,3.4vw,24px);line-height:1.3;letter-spacing:-.008em;margin:0 0 22px}
+    font-size:clamp(20px,3.6vw,26px);line-height:1.28;letter-spacing:-.008em;margin:0 0 22px}
   .rights .em{font-weight:500}
+  br.brk{display:none}
+  @media (min-width:721px){br.brk{display:inline}}
   .rights li:last-child{margin-bottom:0}
   .rights li span.n{display:inline;font-family:"Newsreader",Georgia,serif;
     font-weight:300;font-size:inherit;color:inherit;
@@ -161,8 +163,8 @@
 <div class="wrap hero">
   <p class="sec reveal">Section 1. The People of California find and declare&hellip;</p>
   <ol class="rights">
-    <li class="reveal"><span class="n">1.</span>The people have the right to <span class="em">audit</span> all publicly owned postsecondary courses and programs online at no cost.</li>
-    <li class="reveal"><span class="n">2.</span>The people have the right to access &mdash; and <span class="em">earn full credit</span> &mdash; all publicly owned postsecondary courses and programs online at cost.</li>
+    <li class="reveal"><span class="n">1.</span>The people have the right to <span class="em">audit</span> all publicly owned postsecondary<br class="brk"> courses and programs online at no cost.</li>
+    <li class="reveal"><span class="n">2.</span>The people have the right to access &mdash; and <span class="em">earn full credit</span> &mdash; all<br class="brk"> publicly owned postsecondary courses and programs online at cost.</li>
   </ol>
   <p class="hero-note">Every UC, CSU, and CCC course available online. Free or full credit. Open to all. Fully accredited. Low cost. Drafted. Filed with the California Attorney General twice. Now passing the torch.</p>
   <a class="btn" href="/measure.pdf">Read the full amendment</a>
